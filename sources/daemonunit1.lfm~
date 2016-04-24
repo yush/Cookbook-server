@@ -1,0 +1,11 @@
+bject Daemon1: TDaemon1
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  OnStart = DataModuleStart
+  OnStop = DataModuleStop
+  OnExecute = DataModuleExecute
+  Height = 150
+  HorizontalOffset = 498
+  VerticalOffset = 189
+  Width = 150
+end

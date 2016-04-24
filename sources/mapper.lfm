@@ -1,0 +1,19 @@
+object DaemonMapper1: TDaemonMapper1
+  DaemonDefs = <  
+    item
+      DaemonClassName = 'TDaemon1'
+      Name = 'cookbook'
+      DisplayName = 'cookbook'
+      Options = [doAllowStop, doAllowPause]
+      WinBindings.Dependencies = <>
+      WinBindings.StartType = stBoot
+      WinBindings.WaitHint = 0
+      WinBindings.IDTag = 0
+      WinBindings.ServiceType = stWin32
+      WinBindings.ErrorSeverity = esIgnore
+      LogStatusReport = True
+    end>
+  OnCreate = DaemonMapper1Create
+  left = 486
+  top = 271
+end

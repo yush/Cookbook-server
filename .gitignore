@@ -1,0 +1,6 @@
+log/
+backup/
+*.bak
+lib/
+db/
+sources/backup/
