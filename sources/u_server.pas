@@ -275,7 +275,7 @@ begin
   aCat := TSQLCategorie.Create();
   Ctxt.InputAsMultiPart(multiPart);
   CatName := multiPart[0].Content;
-  if self.Retrieve('nom = ?', [], [CatName], aCat) then
+  if self.Retrieve('ID = ?', [], [CatName], aCat) then
   begin
     try
       Rec := sv.newRecette(multiPart[1].FileName, '', nil, aCat);
