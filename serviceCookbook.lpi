@@ -29,16 +29,10 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="3">
+    <RequiredPackages Count="1">
       <Item1>
         <PackageName Value="LazDaemon"/>
       </Item1>
-      <Item2>
-        <PackageName Value="LCL"/>
-      </Item2>
-      <Item3>
-        <PackageName Value="FCL"/>
-      </Item3>
     </RequiredPackages>
     <Units Count="12">
       <Unit0>
@@ -48,7 +42,10 @@
       <Unit1>
         <Filename Value="sources/daemoncookbook.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Daemon2"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="daemonCookbook"/>
       </Unit1>
       <Unit2>
         <Filename Value="sources/daemonmapperunit1.pas"/>
@@ -98,7 +95,9 @@
       <Unit11>
         <Filename Value="sources/daemon.pas"/>
         <IsPartOfProject Value="True"/>
+        <ComponentName Value="Daemon1"/>
         <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
       </Unit11>
     </Units>
   </ProjectOptions>
@@ -113,10 +112,10 @@
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Other>
-      <CustomOptions Value="-dDEV"/>
       <OtherDefines Count="1">
         <Define0 Value="DEV"/>
       </OtherDefines>
+      <CompilerPath Value="/home/clem/Development/FreePascal/fpc/bin/fpc"/>
     </Other>
   </CompilerOptions>
   <Debugging>
